@@ -57,9 +57,7 @@ def main
 end
 
 class String
-  def color_red
-    "\e[31m#{self}\e[0m"
-  end
+  def color_red = "\e[31m#{self}\e[0m"
 end
 
 def input(message)
