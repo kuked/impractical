@@ -16,11 +16,11 @@ def find_palingrams
     dorw = word.reverse
     if size > 1
       (0...size).each do |i|
-        if word[i..] == dorw[..i-1] && words.include?(dorw[i-1..])
-          palingrams << [word, dorw[i-1..]]
+        if word[i..] == dorw[...size-i] && words.include?(dorw[size-i..])
+          palingrams << [word, dorw[size-i..]]
         end
-        if word[..i] == dorw[i-1..] and words.include?(dorw[..i-1])
-          palingrams << [dorw[..i-1], word]
+        if word[...i] == dorw[size-i..] and words.include?(dorw[...size-i])
+          palingrams << [dorw[...size-i], word]
         end
       end
     end
@@ -33,4 +33,4 @@ palingrams = find_palingrams
 palingrams_sorted = palingrams.sort
 
 puts "\nNumber of palingrams found = #{palingrams_sorted.size}"
-palingrams.each { |pa| puts "#{pa[0]} #{pa[1]}" }
+palingrams_sorted.each { |pa| puts "#{pa[0]} #{pa[1]}" }
