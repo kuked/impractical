@@ -1,0 +1,45 @@
+Measure Mode: wall_time
+Thread ID: 620
+Fiber ID: 600
+Total: 0.593038
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 48.34      0.525     0.287     0.000     0.239    60388   Range#each                     
+ 35.69      0.212     0.212     0.000     0.000  2201810   String#[]                      
+  3.46      0.551     0.021     0.000     0.530        1   Hash#each_key                  
+  1.40      0.026     0.008     0.000     0.018        2   Array#each                     
+  1.37      0.008     0.008     0.000     0.000        2   IO#each_line                   
+  0.79      0.006     0.005     0.000     0.001    24994   Array#<=>                      
+  0.78      0.005     0.005     0.000     0.000    60388   String#reverse                 
+  0.27      0.008     0.002     0.000     0.006        1   Array#sort                     
+  0.25      0.001     0.001     0.000     0.000    26192   String#<=>                     
+  0.05      0.000     0.000     0.000     0.000     2231   IO#write                       
+  0.05      0.001     0.000     0.000     0.000     2231   IO#puts                        
+  0.04      0.001     0.000     0.000     0.001     2231   Kernel#puts                    
+  0.03      0.593     0.000     0.000     0.593        1   Kernel#load                    
+  0.01      0.000     0.000     0.000     0.000        1   Kernel#require_relative        
+  0.00      0.000     0.000     0.000     0.000        1   File#initialize                
+  0.00      0.584     0.000     0.000     0.584        1   Object#find_palingrams         palingrams_optimized.rb:10
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#open                    
+  0.00      0.025     0.000     0.000     0.025        2  *Class#new                      
+  0.00      0.000     0.000     0.000     0.000        1   <Object::Object>#include       
+  0.00      0.000     0.000     0.000     0.000        4   IO#set_encoding                
+  0.00      0.000     0.000     0.000     0.000        4   Kernel#respond_to?             
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#gem_original_require    
+  0.00      0.000     0.000     0.000     0.000        1   Module#append_features         
+  0.00      0.000     0.000     0.000     0.000        1   Integer#to_s                   
+  0.00      0.000     0.000     0.000     0.000        1   BasicObject#!=                 
+  0.00      0.000     0.000     0.000     0.000        2   Module#method_added            
+  0.00      0.025     0.000     0.000     0.025        1   Enumerable#each_entry          
+  0.00      0.000     0.000     0.000     0.000        2   Kernel#class                   <internal:kernel>:18
+  0.00      0.008     0.000     0.000     0.008        1   Enumerator#each                
+  0.00      0.000     0.000     0.000     0.000        2   Monitor#mon_owned?             
+  0.00      0.008     0.000     0.000     0.008        1   Enumerable#to_a                
+  0.00      0.000     0.000     0.000     0.000        1   Monitor#enter                  
+  0.00      0.000     0.000     0.000     0.000        1   Monitor#exit                   
+  0.00      0.000     0.000     0.000     0.000        1   Module#included                
+  0.00      0.000     0.000     0.000     0.000        1   Hash#initialize                
+  0.00      0.000     0.000     0.000     0.000        1   Module#===                     
+  0.00      0.000     0.000     0.000     0.000        1   Comparable#==                  
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#instance_of?            
