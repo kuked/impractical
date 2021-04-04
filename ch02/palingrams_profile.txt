@@ -1,40 +1,32 @@
-  %   cumulative   self              self     total
- time   seconds   seconds    calls  ms/call  ms/call  name
- 69.88    24.10     24.10    61069     0.39     0.39  Array#include?
- 21.47    31.51      7.41   563528     0.01     0.18  Object#find_palingrams
-  3.02    32.55      1.04  2074112     0.00     0.00  String#[]
-  2.41    33.38      0.83    60388     0.01     0.56  Range#each
-  1.34    33.84      0.46  1067834     0.00     0.00  Integer#-
-  1.27    34.28      0.44  1006278     0.00     0.00  String#==
-  0.29    34.38      0.10        2    49.26 17232.59  Array#each
-  0.08    34.41      0.03    60388     0.00     0.00  String#reverse
-  0.08    34.44      0.03    60388     0.00     0.00  String#size
-  0.07    34.46      0.02    60388     0.00     0.00  Integer#>
-  0.03    34.47      0.01     4187     0.00     0.00  Array#<=>
-  0.02    34.48      0.01        2     3.72     3.72  IO#each_line
-  0.02    34.48      0.01        1     7.26    18.25  Array#sort
-  0.01    34.49      0.00      487     0.01     0.01  nil#
-  0.01    34.49      0.00     4217     0.00     0.00  String#<=>
-  0.00    34.49      0.00      488     0.00     0.00  IO#puts
-  0.00    34.49      0.00      488     0.00     0.01  Kernel#puts
-  0.00    34.49      0.00      974     0.00     0.00  Array#[]
-  0.00    34.49      0.00        1     0.44     0.44  TracePoint#enable
-  0.00    34.49      0.00      488     0.00     0.00  IO#write
-  0.00    34.49      0.00      487     0.00     0.00  Array#<<
-  0.00    34.49      0.00        1     0.05     0.05  Kernel#require_relative
-  0.00    34.49      0.00        1     0.01     7.47  Dictionary#load
-  0.00    34.49      0.00        1     0.01     7.45  Enumerator#each
-  0.00    34.49      0.00        1     0.00     0.01  #<Object:0x00000001448c44a8>.include
-  0.00    34.49      0.00        1     0.00     0.01  Kernel#open
-  0.00    34.49      0.00        4     0.00     0.00  IO#set_encoding
-  0.00    34.49      0.00        1     0.00     0.00  File#initialize
-  0.00    34.49      0.00        1     0.00     7.45  Enumerable#to_a
-  0.00    34.49      0.00        2     0.00     0.00  Module#method_added
-  0.00    34.49      0.00        1     0.00     0.00  TracePoint#disable
-  0.00    34.49      0.00        1     0.00     0.00  Module#append_features
-  0.00    34.49      0.00        1     0.00     0.00  Integer#to_s
-  0.00    34.49      0.00        1     0.00     0.00  Array#length
-  0.00    34.49      0.00        1     0.00     0.00  Monitor#mon_owned?
-  0.00    34.49      0.00        1     0.00     0.00  Kernel#respond_to?
-  0.00    34.49      0.00        1     0.00     0.00  Module#included
-  0.00    34.49      0.00        1     0.00 34492.08  #toplevel
+Measure Mode: wall_time
+Thread ID: 620
+Fiber ID: 600
+Total: 73.835666
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 99.18     73.231    73.231     0.000     0.000   187024   Array#include?                 
+  0.43     73.787     0.320     0.000    73.467    60388   Range#each                     
+  0.32      0.236     0.236     0.000     0.000  2201810   String#[]                      
+  0.04     73.820     0.026     0.000    73.794        2   Array#each                     
+  0.01      0.008     0.008     0.000     0.000        2   IO#each_line                   
+  0.01      0.006     0.006     0.000     0.000    60388   String#reverse                 
+  0.01      0.006     0.004     0.000     0.001    24994   Array#<=>                      
+  0.00      0.007     0.002     0.000     0.006        1   Array#sort                     
+  0.00      0.001     0.001     0.000     0.000    26192   String#<=>                     
+  0.00      0.000     0.000     0.000     0.000     2231   IO#write                       
+  0.00      0.001     0.000     0.000     0.000     2231   IO#puts                        
+  0.00      0.001     0.000     0.000     0.001     2231   Kernel#puts                    
+  0.00     73.836     0.000     0.000    73.836        1   Kernel#load                    
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#require_relative        
+  0.00      0.000     0.000     0.000     0.000        1   File#initialize                
+  0.00      0.000     0.000     0.000     0.000        1   <Object::Object>#include       
+  0.00     73.827     0.000     0.000    73.827        1   Object#find_palingrams         palingrams.rb:10
+  0.00      0.000     0.000     0.000     0.000        1   Integer#to_s                   
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#open                    
+  0.00      0.000     0.000     0.000     0.000        4   IO#set_encoding                
+  0.00      0.000     0.000     0.000     0.000        1   Module#append_features         
+  0.00      0.000     0.000     0.000     0.000        2   Module#method_added            
+  0.00      0.008     0.000     0.000     0.008        1   Enumerator#each                
+  0.00      0.008     0.000     0.000     0.008        1   Enumerable#to_a                
+  0.00      0.000     0.000     0.000     0.000        1   Module#included                
