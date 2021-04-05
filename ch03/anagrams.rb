@@ -2,7 +2,6 @@
 
 # Find word anagrams.
 
-require "set"
 require_relative "dictionary"
 
 include Dictionary
