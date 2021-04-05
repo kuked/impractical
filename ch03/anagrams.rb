@@ -30,6 +30,5 @@ end
 if anagrams.empty?
   puts "You need a larger dictionary or a new name!"
 else
-  puts "Anagrams ="
-  puts anagrams
+  puts "Anagrams =\n#{anagrams.join("\n")}"
 end
