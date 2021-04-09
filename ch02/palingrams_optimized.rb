@@ -1,11 +1,11 @@
 #!/bin/env ruby
 
 # Find phrase palindromes
+$LOAD_PATH.unshift("#{__dir__}/../helpers")
+
 require 'set'
-require_relative "dictionary"
-
-include Dictionary
-
+require "impractical_helper"
+include ImpracticalHelper
 
 def find_palingrams
   palingrams = []  

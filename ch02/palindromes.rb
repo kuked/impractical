@@ -2,9 +2,10 @@
 
 # Find word palindromes.
 
-require_relative "dictionary"
+$LOAD_PATH.unshift("#{__dir__}/../helpers")
 
-include Dictionary
+require "impractical_helper"
+include ImpracticalHelper
 
 words = load("2of4brif.txt")
 palindromes = []

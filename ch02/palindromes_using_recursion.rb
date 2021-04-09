@@ -2,10 +2,12 @@
 
 # Find word palindromes.
 
-require_relative "dictionary"
-require_relative "string_ext"
+$LOAD_PATH.unshift("#{__dir__}/../helpers")
 
-include Dictionary
+require "impractical_helper"
+include ImpracticalHelper
+
+require_relative "string_ext"
 using StringExt
 
 words = load("2of4brif.txt")

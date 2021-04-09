@@ -2,10 +2,10 @@
 
 # Find phrase palindromes
 
-require_relative "dictionary"
+$LOAD_PATH.unshift("#{__dir__}/../helpers")
 
-include Dictionary
-
+require "impractical_helper"
+include ImpracticalHelper
 
 def find_palingrams
   palingrams = []  

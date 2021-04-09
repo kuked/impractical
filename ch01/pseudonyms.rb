@@ -1,5 +1,11 @@
 #!/bin/env ruby
 
+$LOAD_PATH.unshift("#{__dir__}/../helpers")
+
+require "impractical_helper"
+include ImpracticalHelper
+using StringExt
+
 # Randomly select a name from two arrays and display it on the screen.
 
 def main
@@ -55,16 +61,6 @@ def main
 
   input("\nPress Enter to exit.")
 end
-
-class String
-  def color_red = "\e[31m#{self}\e[0m"
-end
-
-def input(message)
-  print message
-  gets.chomp
-end
-
 
 if __FILE__ == $PROGRAM_NAME
   main
